@@ -1,0 +1,18 @@
+:root {
+    --font-zain-light: 'Zain-Light', sans-serif;
+    --font-zai-tornpaper: 'Zai-TornPaper', serif;
+    --title-drop-shadow: 5px -4px 4px 0px rgba(0, 0, 0, 0.5);
+    --color-white: #EFF3FB;
+    --color-black: #000000;
+    --button-image: url('images/bouton.png');
+}
+
+@font-face {
+    font-family: 'Zain-Light';
+    src: url('fonts/zain/Zain-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Zai-TornPaper';
+    src: url('fonts/zai_TornPaper/zai_TornPaper.ttf') format('truetype');
+}
