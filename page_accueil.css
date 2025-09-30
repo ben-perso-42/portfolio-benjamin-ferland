@@ -1,11 +1,17 @@
+/* === Variable === */
+
 :root {
     --font-zain-light: 'Zain-Light', sans-serif;
     --font-zai-tornpaper: 'Zai-TornPaper', serif;
     --title-drop-shadow: 5px -4px 4px 0px rgba(0, 0, 0, 0.5);
     --color-white: #EFF3FB;
     --color-black: #000000;
+    --color-beige: #DFDAD5;
+
     --button-image: url('images/bouton.png');
 }
+
+/* === FONT === */
 
 @font-face {
     font-family: 'Zain-Light';
@@ -15,4 +21,229 @@
 @font-face {
     font-family: 'Zai-TornPaper';
     src: url('fonts/zai_TornPaper/zai_TornPaper.ttf') format('truetype');
+}
+
+/* === GLOBAL === */
+body {
+    font-family: var(--font-zain-light);
+    background-color: var(--color-white);
+    color: var(--color-black);
+    line-height: 1.6;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-image: url("medias/background_desktop.jpg");
+}
+
+
+
+/* === NAVBAR === */
+.navbar-brand {
+    font-family: var(--font-zai-tornpaper);
+    color: var(--color-beige);
+    font-size: 3rem;
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    /* Contour blanc de 2px */
+}
+
+/* Navbar lien */
+.navbar-nav .nav-link {
+    font-family: var(--font-zain-light);
+    font-size: 3rem;
+    color: var(--color-black);
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--title-drop-shadow);
+}
+
+
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+
+/* === FLIP CARD (HEADER) === */
+
+.flip-card {
+    width: 600px;
+    height: 800px;
+    perspective: 1000px; /* effet 3D */
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip-card-front {
+    border-radius: 50px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    color: var(--color-black);
+    padding: 20px;
+    text-align: center;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h2 {
+    font-family: var(--font-zain-light);
+    font-size: 1.8rem;
+    line-height: 1.5;
+}
+
+
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+
+
+/* === Projet Caroussel === */
+
+/* Centrer le carrousel et le mettre à 80% */
+#projetsCarousel {
+    width: 60%;
+    margin: auto;
+  }
+
+  /* Agrandir les paragraphes */
+  #projetsCarousel p {
+    font-size: 30px; /* plus grand que par défaut */
+    margin-top: 1rem;
+  }
+
+  #projetsCarousel h2 {
+    font-size: 50px; /* plus grand que par défaut */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+/* Conteneur du bouton image + texte */
+.btn-image {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  
+  /* Image du bouton */
+  .btn-image .img-bouton {
+    display: block;
+    max-width: 180px;
+  }
+  
+  /* Texte par-dessus l'image */
+  .btn-image span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;              
+    font-size: 1.8rem;    /* ← plus grand texte */
+    font-family: var(--font-zain-light);
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* lisibilité améliorée */
+  }
+
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+
+
+/* === COMPÉTENCES === */
+#competences img {
+    max-width: 80px;
+    transition: transform 0.3s ease;
+}
+
+#competences img:hover {
+    transform: scale(1.1);
+}
+
+
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+
+
+/* === FOOTER === */
+footer {
+    font-family: var(--font-zain-light);
+    font-size: 1rem;
+    background-color: var(--color-black);
+    color: var(--color-white);
+}
+
+
+
+
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+/* ========================================================================================== /* 
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+
+    body {
+        background-image: url("medias/background_mobile.jpg");
+    }
+
+    h1,
+    .display-3 {
+        font-size: 40px;
+        color: #ff0000;
+    }
+
+    h2 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .navbar-brand {
+        font-size: 1.6rem;
+    }
 }
