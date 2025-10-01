@@ -1,31 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page d'accueil</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="medias/logo/logo_portfolio.png" sizes="64x64" />
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Swiper CSS pour le carrousel compétences -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- CSS personnalisé -->
+    <link rel="stylesheet" href="page_accueil.css">
 </head>
 
-<body class="bg-light">
+<body>
 
-
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-
-    <!-- NAVBAR -->
-
+    <!-- ===================== NAVBAR ===================== -->
     <nav class="navbar navbar-expand-md navbar-light bg-transparent px-3">
+        <!-- Logo ou marque -->
         <a class="navbar-brand" href="#">B</a>
-        <!-- Bouton hamburger visible seulement en <768px -->
+
+        <!-- Bouton hamburger pour mobile -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu"
             aria-controls="menu" aria-expanded="false" aria-label="Ouvrir le menu">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Menu -->
+
+        <!-- Liens de navigation -->
         <div class="collapse navbar-collapse justify-content-end" id="menu">
             <ul class="navbar-nav">
                 <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
@@ -35,135 +42,109 @@
         </div>
     </nav>
 
+    <!-- ===================== HEADER ===================== -->
+    <header class="text-center py-5">
+        <h1>Portfolio</h1>
+    </header>
 
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-
-    <!-- HEADER -->
-
-    <header id="apropos" class="d-flex justify-content-center py-5">
+    <!-- ===================== SECTION À PROPOS ===================== -->
+    <section id="apropos" class="d-flex justify-content-center align-items-center py-5">
         <div class="flip-card">
             <div class="flip-card-inner">
-                <div class="flip-card-front"> <!-- Face avant -->
-                    <img src="medias/photo_héros_carte_copie-Photoroom 1.png" alt="Projet Torn Paper"
-                        class="img-fluid rounded">
+                <!-- Face avant de la carte -->
+                <div class="flip-card-front">
+                    <img src="medias/photo_héros_carte_copie-Photoroom 1.png" alt="Moi" class="img-fluid rounded">
                 </div>
-                <div class="flip-card-back"> <!-- Face arrière -->
-                    <div class="p-4">
-                        <h2>
-                            Je cherche un poste de vidéaste et monteur vidéo dans le domaine audiovisuel, où je pourrai utiliser mes compétences en montage
-                            et en son tout en partageant ma créativité et ma touche personnelle dans les projets.
-                            Je recherche un poste de vidéaste et monteur vidéo dans le secteur audiovisuel,
-                            afin de mettre à profit mon savoir-faire en montage et en traitement du son et de l’image.
-                            Je souhaite partager ma créativité et ma touche personnelle dans divers projets audiovisuels.
-                        </h2>
+                <!-- Face arrière de la carte -->
+                <div class="flip-card-back d-flex align-items-center">
+                    <div>
+                        <p>
+                            Je cherche un poste de vidéaste et monteur vidéo dans le domaine audiovisuel, où je pourrai
+                            utiliser mes compétences en montage et en son tout en partageant ma créativité et ma touche
+                            personnelle dans les projets.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-    </header>
+    </section>
 
+    <!-- ===================== CARROUSEL PROJETS ===================== -->
+    <section id="projets" class="container py-5">
+        <h2 class="text-center mb-4">Mes Projets</h2>
 
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-    <!------------------------------------------------------------------------------------->
-
-    <!-- Carrousel MES PROJETS -->
-
-<div id="projetsCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-  
-      <!-- Projet 1 -->
-      <div class="carousel-item active text-center bg-dark text-white p-5">
-        <h2>Projet 1</h2>
-        <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="miniature projet 1">
-        <p>Un court-métrage en mosaïque qui explore l’isolement social et mental de Marc, un trentenaire prisonnier de son addiction.</p>
-        <a href="#" class="btn-image">
-            <img src="medias/bouton.png" alt="Voir plus" class="img-bouton">
-            <span>Voir plus</span>
-          </a>
-      </div>
-  
-      <!-- Projet 2 -->
-      <div class="carousel-item text-center bg-dark text-white p-5">
-        <h2>Projet 2</h2>
-        <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="miniature projet 2">
-        <p>Un projet consistant à créer un trailer photo présentant une fausse série policière où un détective tente d’arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.</p>
-        <a href="#" class="btn-image">
-            <img src="medias/bouton.png" alt="Voir plus" class="img-bouton">
-            <span>Voir plus</span>
-          </a>
-      </div>
-  
-      <!-- Projet 3 -->
-      <div class="carousel-item text-center bg-dark text-white p-5">
-        <h2>Projet 3</h2>
-        <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="miniature projet 3">
-        <p>Le projet est une courte vidéo en stop motion, mêlant animations 2D et générique, illustrant un homme (Victor) sombrant dans le burnout.</p>
-        <a href="#" class="btn-image">
-            <img src="medias/bouton.png" alt="Voir plus" class="img-bouton">
-            <span>Voir plus</span>
-          </a>
-      </div>
-  
-      <!-- Projet 4 -->
-      <div class="carousel-item text-center bg-dark text-white p-5">
-        <h2>Projet 4</h2>
-        <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="miniature projet 4">
-        <p>Un homme, d’abord triste après avoir été quitté par son amoureuse, sombre peu à peu dans la colère et l’obsession, une vidéo racontée à travers une lentille macro.</p>
-        <a href="#" class="btn-image">
-            <img src="medias/bouton.png" alt="Voir plus" class="img-bouton">
-            <span>Voir plus</span>
-          </a>
-      </div>
-  
-    </div>
-  
-    <!-- Contrôles -->
-    <button class="carousel-control-prev" type="button" data-bs-target="#projetsCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon"></span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#projetsCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon"></span>
-    </button>
-  </div>
-
-    <!-- MES COMPÉTENCES -->
-    <section class="container text-center py-5">
-        <h2 class="mb-4">Mes Compétences</h2>
-        <div class="row g-4 justify-content-center">
-            <div class="col-4 col-md-2"><img src="medias/logo/logo figma.png" alt="Figma" class="img-fluid"></div>
-            <div class="col-4 col-md-2"><img src="medias/logo/logo daVinci.png" alt="DaVinci Resolve" class="img-fluid">
+        <div id="projetsCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner text-center">
+                <!-- Projet 1 -->
+                <div class="carousel-item active">
+                    <h3>Projet 1</h3>
+                    <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="Projet 1">
+                    <p>Un court-métrage en mosaïque qui explore l’isolement social et mental.</p>
+                </div>
+                <!-- Projet 2 -->
+                <div class="carousel-item">
+                    <h3>Projet 2</h3>
+                    <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="Projet 2">
+                    <p>Un trailer photo présentant une fausse série policière.</p>
+                </div>
+                <!-- Projet 3 -->
+                <div class="carousel-item">
+                    <h3>Projet 3</h3>
+                    <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="Projet 3">
+                    <p>Une vidéo en stop motion illustrant le burnout.</p>
+                </div>
+                <!-- Projet 4 -->
+                <div class="carousel-item">
+                    <h3>Projet 4</h3>
+                    <img src="medias/miniature_projet_1_copie.png" class="d-block w-100" alt="Projet 4">
+                    <p>Une vidéo en macro qui explore la tristesse et la colère.</p>
+                </div>
             </div>
-            <div class="col-4 col-md-2"><img src="medias/logo/logo github.png" alt="GitHub" class="img-fluid"></div>
-            <div class="col-4 col-md-2"><img src="medias/logo/logo photoshop.png" alt="Photoshop" class="img-fluid">
-            </div>
-            <div class="col-4 col-md-2"><img src="medias/logo/logo after effects.png" alt="After Effects"
-                    class="img-fluid">
+
+            <!-- Flèches de navigation -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#projetsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#projetsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- ===================== SECTION COMPÉTENCES ===================== -->
+    <section id="competences" class="container text-center py-5">
+        <h2>Mes Compétences</h2>
+
+        <!-- Swiper compétences -->
+        <div class="competences-swiper">
+            <div class="swiper-wrapper">
+                <!-- Logos -->
+                <div class="swiper-slide"><img src="medias/logo/logo figma.png" alt="Figma"></div>
+                <div class="swiper-slide"><img src="medias/logo/logo daVinci.png" alt="DaVinci Resolve"></div>
+                <div class="swiper-slide"><img src="medias/logo/logo github.png" alt="GitHub"></div>
+                <div class="swiper-slide"><img src="medias/logo/logo photoshop.png" alt="Photoshop"></div>
+                <div class="swiper-slide"><img src="medias/logo/logo after effects.png" alt="After Effects"></div>
             </div>
         </div>
     </section>
 
-    <!-- CONTACT -->
-    <footer class="text-center py-4 bg-dark text-white">
-        <h2 class="mb-3">Me Contacter</h2>
-        <p>514-247-6971<br>
-            bferland.contact@gmail.com</p>
+    <!-- ===================== FOOTER ===================== -->
+    <footer id="contact" class="text-center py-4 bg-dark text-white">
+        <h2>Me Contacter</h2>
+        <p>514-247-6971<br> bferland.contact@gmail.com</p>
         <p class="mt-3">©Benjamin Ferland 2025</p>
     </footer>
 
+    <!-- ===================== SCRIPTS ===================== -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Vue.js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- GSAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"></script>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- lien css -->
-    <link rel="stylesheet" href="page_accueil.css">
-    <!-- lien js -->
+    <!-- JS personnalisé -->
     <script src="page_accueil.js"></script>
 </body>
 

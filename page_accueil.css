@@ -1,5 +1,4 @@
-/* === Variable === */
-
+/* === VARIABLES GLOBALES === */
 :root {
     --font-zain-light: 'Zain-Light', sans-serif;
     --font-zai-tornpaper: 'Zai-TornPaper', serif;
@@ -11,8 +10,7 @@
     --button-image: url('images/bouton.png');
 }
 
-/* === FONT === */
-
+/* === FONTS === */
 @font-face {
     font-family: 'Zain-Light';
     src: url('fonts/zain/Zain-Light.ttf') format('truetype');
@@ -26,54 +24,85 @@
 /* === GLOBAL === */
 body {
     font-family: var(--font-zain-light);
-    background-color: var(--color-white);
+    background: var(--color-white) url("medias/background_desktop.jpg") no-repeat center/cover fixed;
     color: var(--color-black);
-    line-height: 1.6;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-    background-image: url("medias/background_desktop.jpg");
+    margin: 0;
 }
 
+h1,
+h2,
+h3 {
+    font-family: var(--font-zai-tornpaper);
+    text-align: center;
+    margin: 0;
+}
 
+h1 {
+    font-size: 7rem;
+}
+
+h2 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 1.8rem;
+}
+
+p {
+    font-size: 3rem;
+    line-height: 1.6;
+    text-align: center;
+    margin: 0.5rem 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 /* === NAVBAR === */
-.navbar-brand {
-    font-family: var(--font-zai-tornpaper);
-    color: var(--color-beige);
-    font-size: 3rem;
-    -webkit-text-stroke: 2px rgb(255, 255, 255);
-    /* Contour blanc de 2px */
+.navbar-nav {
+    gap: 50px;
+    /*espace entre À propos Projets Contact*/
+    color: var(--color-white);
 }
 
-/* Navbar lien */
-.navbar-nav .nav-link {
-    font-family: var(--font-zain-light);
-    font-size: 3rem;
+.navbar-brand {
+    font-size: 6rem;
     color: var(--color-black);
-    transition: color 0.3s ease;
+    font-family: var(--font-zai-tornpaper);
+}
+
+.navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    font-size: 3rem;
 }
 
 .navbar-nav .nav-link:hover {
-    color: var(--title-drop-shadow);
+    color: var(--color-white);
+}
+
+/* === HEADER === */
+header {
+    margin-top: 150px;
 }
 
 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
 
-/* === FLIP CARD (HEADER) === */
-
+/* === SECTION À PROPOS (FLIP-CARD) === */
 .flip-card {
+    display: flex;
+    justify-content: center;
     width: 600px;
     height: 800px;
-    perspective: 1000px; /* effet 3D */
+    perspective: 1000px;
+    /* effet 3D */
 }
 
 .flip-card-inner {
@@ -93,157 +122,116 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.flip-card-front {
-    border-radius: 50px;
+    backface-visibility: hidden;
+    border-radius: 20px;
 }
 
 .flip-card-front img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    border-radius: 20px;
 }
 
 .flip-card-back {
-    color: var(--color-black);
-    padding: 20px;
-    text-align: center;
+    background: var(--color-beige);
     transform: rotateY(180deg);
+    padding: 2rem;
 }
 
-.flip-card-back h2 {
-    font-family: var(--font-zain-light);
-    font-size: 1.8rem;
-    line-height: 1.5;
+/* section apropos */
+#apropos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 0;
+    margin-bottom: 150px;
+    /* espace vers Mes Projets */
 }
 
-
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-
-
-/* === Projet Caroussel === */
-
-/* Centrer le carrousel et le mettre à 80% */
+/* === CAROUSEL PROJETS === */
 #projetsCarousel {
-    width: 60%;
-    margin: auto;
-  }
+    width: 80%;
+    margin: 0 auto;
+}
 
-  /* Agrandir les paragraphes */
-  #projetsCarousel p {
-    font-size: 30px; /* plus grand que par défaut */
-    margin-top: 1rem;
-  }
-
-  #projetsCarousel h2 {
-    font-size: 50px; /* plus grand que par défaut */
-    margin-top: 2rem;
+#projets h2 {
     margin-bottom: 2rem;
-  }
+}
 
-/* Conteneur du bouton image + texte */
-.btn-image {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-  }
-  
-  /* Image du bouton */
-  .btn-image .img-bouton {
-    display: block;
-    max-width: 180px;
-  }
-  
-  /* Texte par-dessus l'image */
-  .btn-image span {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;              
-    font-size: 1.8rem;    /* ← plus grand texte */
+#projets .carousel-item h3 {
     font-family: var(--font-zain-light);
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* lisibilité améliorée */
-  }
+    font-size: 2.5rem;
+    margin-top: 1rem;
+}
 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
+#projets .carousel-item p {
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
+}
 
+/* === COMPÉTENCES (SWIPER) === */
+#competences {
+    margin-bottom: 150px;
+    /* espace avant le footer */
+}
 
-/* === COMPÉTENCES === */
-#competences img {
+.competences-swiper {
+    margin-top: 150px;
+    /* espace sous le titre Mes Compétences */
+}
+
+.competences-swiper .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.competences-swiper img {
     max-width: 80px;
     transition: transform 0.3s ease;
 }
 
-#competences img:hover {
+.competences-swiper img:hover {
     transform: scale(1.1);
 }
 
-
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-
-
 /* === FOOTER === */
 footer {
-    font-family: var(--font-zain-light);
-    font-size: 1rem;
     background-color: var(--color-black);
     color: var(--color-white);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
-
-
-
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-/* ========================================================================================== /* 
-
-/* === RESPONSIVE === */
+/* === RESPONSIVE MOBILE === */
 @media (max-width: 768px) {
-
-    body {
-        background-image: url("medias/background_mobile.jpg");
-    }
-
-    h1,
-    .display-3 {
-        font-size: 40px;
-        color: #ff0000;
+    h1 {
+        font-size: 4rem;
     }
 
     h2 {
-        font-size: 1.6rem;
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
     }
 
     p {
-        font-size: 1rem;
+        font-size: 1.8rem;
+    }
+
+    .flip-card {
+        width: 90%;
+        height: auto;
     }
 
     .navbar-brand {
-        font-size: 1.6rem;
+        font-size: 4rem;
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 2rem;
     }
 }
