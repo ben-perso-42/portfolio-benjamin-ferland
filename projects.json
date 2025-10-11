@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "La pilule de trop",
+        "category": "Vidéo",
+        "images": [
+            "./medias/miniature_projet_1.png",
+            "./medias/photo_héros_carte.png"
+        ],
+        "description": "Un court-métrage en mosaïque de 1min à 1min30 qui explore l’isolement social et mental de Marc, un trentenaire prisonnier de son addiction.",
+        "technologies": [
+            "Davinci Resolve",
+            "After Effects",
+            "Illustrator"
+        ],
+        "team": [
+            "Ryan Dufault",
+            "Yannick Chamberland"
+        ],
+        "roles": [
+            "Conception sonore",
+            "Réalisateur",
+            "Montage vidéo",
+            "Vidéaste"
+        ]
+    }
+]
