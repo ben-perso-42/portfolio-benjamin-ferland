@@ -1,19 +1,40 @@
-// Crée le swiper compétences
-const competencesSwiper = new Swiper('.competences-swiper', {
-    direction: 'horizontal', // Ça défile à l’horizontale
-    slidesPerView: 3,       // 3 slides visibles
-    spaceBetween: 30,       // Espace entre chaque slide
-    scrollbar: {
-        el: '.swiper-scrollbar', // Barre de scroll
-        draggable: true,         // On peut la bouger
-    },
-    breakpoints: {
-        320: { slidesPerView: 2, spaceBetween: 20 },   // Petit écran
-        768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
-        1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
-    }
+// // Crée le swiper compétences
+// const competencesSwiper = new Swiper('.competences-swiper', {
+//   direction: 'horizontal', // Ça défile à l’horizontale
+//   slidesPerView: 3,       // 3 slides visibles
+//   spaceBetween: 30,       // Espace entre chaque slide
+//   scrollbar: {
+//     el: '.swiper-scrollbar', // Barre de scroll
+//     draggable: true,         // On peut la bouger
+//   },
+//   breakpoints: {
+//     320: { slidesPerView: 2, spaceBetween: 20 },   // Petit écran
+//     768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
+//     1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
+//   }
+// });
+
+
+const app = Vue.createApp({
+  data() {
+    return {
+      project: {}
+    };
+  },
+  mounted() {
+    // Fetch des données depuis le fichier projects.json
+    fetch('projects.json')
+      .then(response => response.json())
+      .then(data => {
+        this.project = data[0]; // Récupère le premier projet dans le tableau
+      })
+      .catch(error => {
+        console.error("Erreur lors du fetch des données:", error);
+      });
+  }
 });
 
+app.mount('#projet');
 
 
 

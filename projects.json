@@ -7,13 +7,13 @@
             "./medias/miniature_projet_1.png",
             "./medias/photo_héros_carte.png"
         ],
-        "description": "Un court-métrage en mosaïque de 1min à 1min30 qui explore l’isolement social et mental de Marc, un trentenaire prisonnier de son addiction.",
-        "technologies": [
-            "Davinci Resolve",
-            "After Effects",
-            "Illustrator"
+        "description_courte": "Un court-métrage en mosaïque de 1min à 1min30 qui explore l’isolement social et mental de Marc, un trentenaire prisonnier de son addiction.",
+        "description_longue": "On a réalisé une vidéo en mosaïque où nous avions une totale liberté créative. Nous avons raconté la descente aux enfers de Marc qui, englouti par les pilules, sombre progressivement dans l’isolement social et mental.",
+        "documentation_links": [
+            "https://youtu.be/qf2fKAnWzsM?si=fVJYE1qyKU8LB5gm",
+            "https://youtu.be/v39zEhgAmEA?si=Ht4269nKBQlB4kAb"
         ],
-        "team": [
+        "équipe": [
             "Ryan Dufault",
             "Yannick Chamberland"
         ],
@@ -22,6 +22,92 @@
             "Réalisateur",
             "Montage vidéo",
             "Vidéaste"
+        ],
+        "logiciels": [
+            "Davinci Resolve",
+            "After Effects",
+            "Illustrator"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "L'Inconnu de Berlin",
+        "category": "Design",
+        "images": [
+            "./medias/l_inconnu_de_berlin_1.jpg",
+            "./medias/l_inconnu_de_berlin_2.jpg",
+            "./medias/l_inconnu_de_berlin_3.jpg"
+        ],
+        "description_courte": "Un projet consistant à créer un trailer photo présentant une fausse série policière où un détective tente d’arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.",
+        "description_longue": "Elle nous a demandé de créer un trailer photo pour une fausse série policière inventée. Le projet devait comporter 12 images présentant les acteurs et les collaborateurs de la série. On a réalisé un trailer photo pour une fausse série policière avec 12 images présentant les acteurs et les collaborateurs. Mon trailer, L'Inconnu de Berlin, raconte l’histoire d’un détective privé de 40 ans qui doit arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.",
+        "documentation_links": [
+            "https://youtu.be/some_example_link"
+        ],
+        "équipe": [],
+        "roles": [
+            "Designer"
+        ],
+        "logiciels": [
+            "Photoshop"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "Sous le poids du papier",
+        "category": "Stop-motion et animation 2D",
+        "images": [
+            "./medias/sous_le_poids_du_papier_1.jpg",
+            "./medias/sous_le_poids_du_papier_2.jpg",
+            "./medias/sous_le_poids_du_papier_3.jpg"
+        ],
+        "description_courte": "Le projet est une courte vidéo en stop motion, mêlant animations 2D et générique, illustrant un homme (Victor) sombrant dans le burnout.",
+        "description_longue": "Nous devions créer une vidéo en stop motion de 1 à 2 minutes intégrant des animations 2D et un générique présentant les rôles de chacun. Le projet exigeait aussi d’utiliser un objet rouge et d’appliquer une colorisation rouge à l’ensemble de la vidéo. On a réalisé une vidéo en stop motion de 1 à 2 minutes avec des animations 2D et un générique présentant les rôles de chacun. Pour respecter les contraintes, on a choisi d’utiliser un vinyle rouge comme objet et on a appliqué une colorisation rouge à toute la vidéo.",
+        "documentation_links": [
+            "https://youtu.be/-Z6a_1mUTyQ?si=myctQFf6GxWvzcUn"
+        ],
+        "équipe": [
+            "Ryan Dufault",
+            "Yannick Chamberland",
+            "Mohamed Ali Sadki"
+        ],
+        "roles": [
+            "Animateur 2D",
+            "Conception sonore",
+            "Réalisateur",
+            "Montage vidéo",
+            "Vidéaste"
+        ],
+        "logiciels": [
+            "Davinci Resolve",
+            "After Effects"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "La rupture",
+        "category": "Vidéo",
+        "images": [
+            "./medias/la_rupture_1.jpg",
+            "./medias/la_rupture_2.jpg",
+            "./medias/la_rupture_3.jpg"
+        ],
+        "description_courte": "Un homme, d’abord triste après avoir été quitté par son amoureuse, sombre peu à peu dans la colère et l’obsession.",
+        "description_longue": "Elle nous a demandé de réaliser une vidéo de 1 à 1 min 30 en filmant différentes parties du corps humain avec une lentille macro. Le but était que l’accumulation d’images exprime un sentiment ou raconte une histoire. On a réalisé une vidéo de 1 à 1 min 30 en filmant surtout les mains et le visage avec une lentille macro. On a choisi de montrer le passage de la tristesse à la colère à travers ces images.",
+        "documentation_links": [
+            "https://youtu.be/clNIjdpMSMc?si=SdNLpTro9GLUv8VY"
+        ],
+        "équipe": [
+            "Ryan Dufault",
+            "Yannick Chamberland"
+        ],
+        "roles": [
+            "Conception sonore",
+            "Réalisateur",
+            "Montage vidéo",
+            "Vidéaste"
+        ],
+        "logiciels": [
+            "Davinci Resolve"
         ]
     }
 ]
