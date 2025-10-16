@@ -1,40 +1,54 @@
-// // Crée le swiper compétences
-// const competencesSwiper = new Swiper('.competences-swiper', {
-//   direction: 'horizontal', // Ça défile à l’horizontale
-//   slidesPerView: 3,       // 3 slides visibles
-//   spaceBetween: 30,       // Espace entre chaque slide
-//   scrollbar: {
-//     el: '.swiper-scrollbar', // Barre de scroll
-//     draggable: true,         // On peut la bouger
-//   },
-//   breakpoints: {
-//     320: { slidesPerView: 2, spaceBetween: 20 },   // Petit écran
-//     768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
-//     1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
-//   }
-// });
-
-
-const app = Vue.createApp({
-  data() {
-    return {
-      project: {}
-    };
+// Crée le swiper compétences
+const competencesSwiper = new Swiper('.competences-swiper', {
+  direction: 'horizontal', // Ça défile à l’horizontale
+  slidesPerView: 3,       // 3 slides visibles
+  spaceBetween: 30,       // Espace entre chaque slide
+  scrollbar: {
+    el: '.swiper-scrollbar', // Barre de scroll
+    draggable: true,         // On peut la bouger
   },
-  mounted() {
-    // Fetch des données depuis le fichier projects.json
-    fetch('projects.json')
-      .then(response => response.json())
-      .then(data => {
-        this.project = data[0]; // Récupère le premier projet dans le tableau
-      })
-      .catch(error => {
-        console.error("Erreur lors du fetch des données:", error);
-      });
+  breakpoints: {
+    320: { slidesPerView: 2, spaceBetween: 20 },   // Petit écran
+    768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
+    1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
   }
 });
 
-app.mount('#projet');
+
+const appli = Vue.createApp({
+  data() {
+    return {
+      projects: []  // Tableau vide pour les projets
+    };
+  },
+  mounted() {
+    console.log("L'app Vue a été créée et montée au DOM (mounted) !");
+
+    // Fetch des données depuis le fichier projects.json
+    fetch('./projects.json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error("Erreur lors du chargement des données");
+        }
+        return response.json();
+      })
+      .then(data => {
+        this.projects = data;  // Remplir le tableau 'projects' avec les données
+        console.log(this.projects);  // Afficher les données dans la console pour vérifier
+      })
+      .catch(error => {
+        console.error("Erreur:", error);
+      });
+  },
+  methods: {
+    // Méthodes supplémentaires si besoin
+  }
+});
+
+// Monter l'application Vue.js dans le DOM
+appli.mount('#projet');
+
+
 
 
 

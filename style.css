@@ -29,40 +29,40 @@ body {
     margin: 0;
 }
 
-h1,
-h2 {
+h1 {
     font-family: var(--font-zai-tornpaper);
     text-align: center;
-    margin-bottom: 5rem;
-}
-
-h1 {
     font-size: 7rem;
-    color: transparent;
+    margin-bottom: 2rem;
+    color: var(--color-black);
     -webkit-text-stroke: 3px var(--color-black);
     position: relative;
 }
 
 h1:hover {
-    color: var(--color-black);
+    color: transparent;
     /* Changer la couleur du texte en noir au survol */
 }
 
 
 h2 {
-    font-size: 4rem;
-    margin-bottom: 1rem;
+    font-family: var(--font-zain-light);
+    font-size: 5rem;
+    margin-top: 4rem;
+
 }
 
 h3 {
-    font-size: 1.8rem;
+    font-size: 2rem;
+    margin-bottom: 5rem;
+    text-align: center;
 }
 
 p {
-    font-size: 3rem;
+    font-size: 2rem;
     line-height: 1.6;
-    text-align: center;
-    margin: 0.5rem 0;
+    text-align: left;
+    margin-bottom: 2rem;
 }
 
 img {
@@ -210,11 +210,6 @@ header {
     padding: 60px 20px;
 }
 
-#projet h1 {
-    font-size: 4rem;
-    text-align: left;
-}
-
 #projet .row {
     display: flex;
     flex-wrap: wrap;
@@ -226,16 +221,8 @@ header {
     max-width: 100%;
 }
 
-#projet h3 {
-    font-size: 2rem;
+.logiciels {
     text-align: left;
-}
-
-#projet p {
-    font-size: 1.5rem;
-    line-height: 1.6;
-    color: var(--color-dark);
-    margin-bottom: 20px;
 }
 
 
