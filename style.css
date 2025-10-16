@@ -34,13 +34,13 @@ h1 {
     text-align: center;
     font-size: 7rem;
     margin-bottom: 2rem;
-    color: var(--color-black);
+    color: transparent;
     -webkit-text-stroke: 3px var(--color-black);
     position: relative;
 }
 
 h1:hover {
-    color: transparent;
+    color: var(--color-black);
     /* Changer la couleur du texte en noir au survol */
 }
 
@@ -49,7 +49,7 @@ h2 {
     font-family: var(--font-zain-light);
     font-size: 5rem;
     margin-top: 4rem;
-
+    margin-bottom: 1rem;
 }
 
 h3 {
@@ -61,8 +61,7 @@ h3 {
 p {
     font-size: 2rem;
     line-height: 1.6;
-    text-align: left;
-    margin-bottom: 2rem;
+    margin: 0.5rem;
 }
 
 img {
@@ -243,6 +242,7 @@ footer {
     color: var(--color-white);
     padding-top: 2rem;
     padding-bottom: 2rem;
+    text-align: center;
 }
 
 /* === RESPONSIVE MOBILE === */
