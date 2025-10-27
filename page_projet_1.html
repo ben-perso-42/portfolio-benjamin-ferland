@@ -38,12 +38,12 @@
     </nav>
 
     <!-- ===================== CONTENU DU PROJET ===================== -->
-    <section id="projet" class="container py-5">
+    <section id="projets" class="container py-5">
 
         <!-- Titre du projet -->
         <header class="text-center mb-5">
             <div v-for="projet in projets">
-                <h1 class="fw-bold"> {{ projet.titre }} </h1>
+                <h1 class="fw-bold" v-if="projet.id==idprojetcourant"> {{ projet.titre }} </h1>
             </div>
             <p class="text-muted">Projet académique — Cours 582-312-MO Vidéo 2</p>
         </header>
@@ -60,48 +60,58 @@
         <section class="mb-5">
             <h2>Informations du projet</h2>
             <div v-for="projet in projets">
-                <p><strong>Nom du projet :</strong><br> {{ projet.titre }}</p>
+                <p v-if="projet.id==1"><strong>Nom du projet :</strong><br>{{ projet.titre }} </p>
 
+                <p v-if="projet.id==1"><strong>Mention :</strong><br>{{ projet.mention }} </p>
 
-                <p><strong>Mention :</strong><br> {{ projet.mention }}</p>
+                <p v-if="projet.id==1"><strong>Cours :</strong><br>{{ projet.cours }} </p>
 
+                <p v-if="projet.id==1"><strong>Type de projet :</strong><br>{{ projet.type_projet }} </p>
 
-                <p><strong>Cours :</strong><br> {{ projet.cours }}</p>
+                <p v-if="projet.id==1"><strong>Type de projet :</strong><br>{{ projet.coequipiers.join(', ') }} </p>
 
-
-                <p><strong>Type de projet :</strong><br> {{ projet.type_projet }}</p>
-
-
-                <p><strong>Coéquipiers :</strong><br> {{ projet.coequipiers.join(', ') }} </p>
-
-                <p><strong>Catégorie : </strong><br> {{ projet.categorie }} </p>
+                <p v-if="projet.id==1"><strong>Catégorie :</strong><br>{{ projet.categorie }} </p>
             </div>
         </section>
 
         <!-- Description longue -->
         <section class="mb-4">
+            
             <h2>Description du projet</h2>
-            <p><strong>Ce que le professeur nous a demandé :</strong> Réaliser une vidéo de 1min à 1min30 en utilisant
-                la
-                technique de mosaïque, avec une liberté totale sur le concept et le scénario.</p>
-            <p><strong>Ce que nous avons réalisé :</strong> Nous avons raconté la descente aux enfers de Marc, un homme
-                englouti par les pilules, qui sombre peu à peu dans l’isolement social et mental.</p>
+            <div v-for="projet in projets">
+            <p v-if="projet.id==1"><strong>Voici le synopsis du projet :</strong><br>{{ projet.description.synopsis }} </p>
+            
+            <p v-if="projet.id==1"><strong>Ce que le professeur nous a demandé :</strong><br>{{ projet.description.demande_professeur }} </p>
+           
+
+            <p v-if="projet.id==1"><strong>Ce que nous avons réalisé :</strong><br>{{ projet.description.notre_realisation }} </p>
+            </div>
+                
         </section>
 
         <!-- Rôles -->
         <section class="mb-4">
-            <h2>Mon rôle dans le projet</h2>
-            <p>Conception sonore, réalisateur, montage vidéo et vidéaste.</p>
+            <h2>Mes rôles dans le projet</h2>
+            <div v-for="projet in projets">
+                <p v-if="projet.id==1">{{ projet.role }} </p>
+                </div>
         </section>
 
         <!-- Logiciels -->
         <section class="mb-4">
             <h2>Logiciels et techniques utilisées</h2>
-            <p><strong>Figma et Photoshop</strong><br> Pour la création du moodboard, du scénarimage, de la direction
-                photo et artistique (tous ce qui concerne l'étape de la pré-production.)
-            </p>
-            <p><strong>DaVinci Resolve</strong><br> Pour la création du montage vidéo, de la conception sonore, et du
-                compositing</p>
+            <div v-for="projet in projets">
+                <p v-if="projet.id==1"><strong>{{ projet.logiciels1 }}</strong></p>
+                <p v-if="projet.id==1"><strong></strong>{{ projet.utilisation1 }}</p>
+
+                <p v-if="projet.id==1"><strong>{{ projet.logiciels2 }}</strong></p>
+                <p v-if="projet.id==1"><strong></strong>{{ projet.utilisation2 }}</p>
+
+
+                </div>
+               
+            <!-- <p><strong>DaVinci Resolve</strong><br> Pour la création du montage vidéo, de la conception sonore, et du
+                compositing</p> -->
         </section>
 
         <!-- ===================== NOUVELLES SECTIONS ===================== -->

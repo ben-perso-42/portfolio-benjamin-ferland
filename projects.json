@@ -1,5 +1,4 @@
-{
-    "projets": [
+[
         {
             "id": 1,
             "titre": "La pilule de trop",
@@ -14,24 +13,21 @@
             ],
             "role": "Conception sonore, réalisateur, montage vidéo et vidéaste",
             "description": {
-                "resume": "Vidéo de 1min30 réalisée avec la technique de mosaïque, racontant la descente aux enfers d'un homme isolé par son addiction.",
-                "demande_professeur": "Réaliser une vidéo de 1min à 1min30 en utilisant la technique de mosaïque.",
-                "notre_realisation": "Nous avons raconté la descente aux enfers de Marc, un homme englouti par les pilules, qui sombre peu à peu dans l'isolement social et mental."
+                "synopsis": "Marc est un homme dans la trentaine qui parait normal au premier regard mais ce que les gens ne savent pas c'est qu'il souffre d'une profonde addiction le laissant en isolation complète socialement et mentalement",
+                "demande_professeur": "Réaliser une vidéo en utilisant la technique de mosaïque.",
+                "notre_realisation": "On a réalisé une vidéo en mosaïque où nous avions une totale liberté créative. Nous avons raconté la descente aux enfers de Marc qui, englouti par les pilules, sombre progressivement dans l'isolement social et mental."
             },
-            "synopsis": "Marc, un trentenaire en apparence ordinaire, cache une addiction qui l'isole totalement sur les plans social et mental.",
-            "logiciels": [
-                {
-                    "nom": "Figma et Photoshop",
-                    "utilisation": "Création du moodboard, du scénarimage, de la direction photo et artistique."
-                },
-                {
-                    "nom": "DaVinci Resolve",
-                    "utilisation": "Montage vidéo, conception sonore et compositing."
-                }
-            ],
+            "logiciels1": "Figma et Photoshop",
+            "utilisation1": "Pour la création du moodboard, du scénarimage, de la direction photo et artistique.",
+            
+            "logiciels2": "DaVinci Resolve",
+            "utilisation2": "Pour la création du montage vidéo, de la conception sonore et le compositing.",
+            
             "direction_photo": "Lumières faibles et tamisées pour renforcer l'ambiance sombre. Utilisation de lampes et de lightpanels pour créer des zones d'ombre. Travellings doux et variations de profondeur de champ pour souligner les symboles (télévisions, bocaux). Les ralentis accentuent la stagnation du temps et l'isolement du protagoniste.",
             "direction_artistique": "Décors symboliques et oppressants. Palette de couleurs sombre et métallique. Espaces restreints et objets du quotidien (télévisions, bocaux) servant à illustrer l'enfermement émotionnel. Jeux de lumière froide et textures réfléchissantes renforçant la claustrophobie.",
-            "miniature": "medias/miniature_projet_1.png"
+
+            "miniature": "medias/miniature_projet_1.png",
+            "description courte": "Un court-métrage en mosaïque qui explore l'isolement social et mental."
         },
         {
             "id": 2,
@@ -54,7 +50,9 @@
                     "nom": "Photoshop",
                     "utilisation": "Création des images, retouches photo et composition du trailer."
                 }
-            ]
+            ],
+            "miniature": "medias/miniature_projet_2.png",
+            "description courte": "Un trailer photo présentant une fausse série policière."
         },
         {
             "id": 3,
@@ -85,7 +83,9 @@
                     "nom": "DaVinci Resolve",
                     "utilisation": "Montage vidéo, étalonnage et conception sonore."
                 }
-            ]
+            ],
+            "miniature": "medias/miniature_projet_3.png",
+            "description courte": "Une vidéo en stop motion illustrant le burnout."
         },
         {
             "id": 4,
@@ -111,7 +111,8 @@
                     "nom": "DaVinci Resolve",
                     "utilisation": "Montage vidéo, conception sonore et étalonnage."
                 }
-            ]
+            ],
+            "miniature": "medias/miniature_projet_4.png",
+            "description courte": "Une vidéo en macro qui explore la tristesse et la colère."
         }
     ]
-}

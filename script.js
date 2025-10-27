@@ -1,5 +1,5 @@
 // Crée le swiper compétences
-const competencesSwiper = new Swiper('.competences-swiper', {
+/*const competencesSwiper = new Swiper('.competences-swiper', {
   direction: 'horizontal', // Ça défile à l’horizontale
   slidesPerView: 3,       // 3 slides visibles
   spaceBetween: 30,       // Espace entre chaque slide
@@ -12,30 +12,38 @@ const competencesSwiper = new Swiper('.competences-swiper', {
     768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
     1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
   }
-});
+});*/
 
 
 const app = Vue.createApp({
   data() {
-    return {
-      projets: [] // Contient les données des projets chargées depuis projets.json
+    return { //mettre mes variables en français
+      projets: [], // Contient les données des projets chargées depuis projets.json
+      idprojetcourant: 2,
+      selectedCategory : Tous,
     };
   },
 
   mounted() {
+
+    /*au chargemetn de la page, va récupérer la param`tre d'url nommé projet. stock le this.idprojetcourant */
+
+
+
+
     fetch('./projects.json')
       .then(data => data.json())
       .then(data => {
-        this.projets = data.projets; // Stocke les projets dans le tableau Vue
+        this.projets = data; // Stocke les projets dans le tableau Vue
         console.log("Projets chargés :", this.projets);
       });
   }
 });
 
-app.mount('#projet'); // Attache l'App Vue à l'élément HTML avec l'id #projet
+app.mount('#projets'); // Attache l'App Vue à l'élément HTML avec l'id #projet
 
 
-
+// 
 
 
 /*Exemples Prof https://tim-montmorency.com/timdoc/582-424MO/swiper/swiper/ */
