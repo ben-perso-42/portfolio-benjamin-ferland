@@ -42,7 +42,9 @@
 
         <!-- Titre du projet -->
         <header class="text-center mb-5">
-            <h1 class="fw-bold">La pilule de trop</h1>
+            <div v-for="projet in projets">
+                <h1 class="fw-bold"> {{ projet.titre }} </h1>
+            </div>
             <p class="text-muted">Projet académique — Cours 582-312-MO Vidéo 2</p>
         </header>
 
@@ -57,13 +59,23 @@
         <!-- Informations principales -->
         <section class="mb-5">
             <h2>Informations du projet</h2>
-            <p><strong>Nom du projet :</strong><br> La pilule de trop </p>
-            <p><strong>Mention :</strong><br> Académique </p>
-            <p><strong>Cours :</strong><br> 582-312-MO Vidéo 2 </p>
-            <p><strong>Type de projet :</strong><br> Équipe </p>
-            <p><strong>Coéquipiers :</strong><br> Ryan Dufault et Yannick Chamberland </p>
-            <p><strong>Coéquipiers :</strong><br> Ryan Dufault et Yannick Chamberland </p>
-            <p><strong>Catégorie : </strong><br> Vidéo </p>
+            <div v-for="projet in projets">
+                <p><strong>Nom du projet :</strong><br> {{ projet.titre }}</p>
+
+
+                <p><strong>Mention :</strong><br> {{ projet.mention }}</p>
+
+
+                <p><strong>Cours :</strong><br> {{ projet.cours }}</p>
+
+
+                <p><strong>Type de projet :</strong><br> {{ projet.type_projet }}</p>
+
+
+                <p><strong>Coéquipiers :</strong><br> {{ projet.coequipiers.join(', ') }} </p>
+
+                <p><strong>Catégorie : </strong><br> {{ projet.categorie }} </p>
+            </div>
         </section>
 
         <!-- Description longue -->
@@ -97,8 +109,10 @@
         <!-- Synopsis -->
         <section class="mb-5">
             <h2>Synopsis</h2>
-            <p>Marc, un trentenaire en apparence ordinaire, cache une addiction qui l'isole totalement sur les plans
-                social et mental.</p>
+            <div v-for="projet in projets">
+                <p>{{ projet.synopsis }}</p>
+            </div>
+
         </section>
 
         <!-- Préproduction -->
@@ -115,27 +129,27 @@
 
             <h3 class="mt-4">Storyboard</h3>
             <div class="row g-3 mt-2">
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_1.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 1">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_2.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 2">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_3.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 3">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_4.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 4">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_5.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 5">
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-9">
                     <img src="medias/processus de création_projet_1/storyboard/storyboard_scène_6.PNG"
                         class="img-fluid rounded shadow" alt="Storyboard 6">
                 </div>
@@ -145,23 +159,18 @@
         <!-- Direction photo -->
         <section class="mb-5">
             <h2>Direction photo</h2>
-            <p>La direction photo de notre film joue sur des lumières faibles et tamisées pour renforcer l’ambiance
-                sombre
-                de l’histoire. Nous avons utilisé des lampes et des lightpanels pour créer des zones d’ombre symbolisant
-                l’enfermement du personnage. La caméra bouge lentement, avec des travellings doux, pour accentuer la
-                sensation d’oppression. Nous avons alterné entre faible et grande profondeur de champ selon les plans,
-                afin de mettre en valeur les objets symboliques (télévisions, bocaux) ou le personnage. Les ralentis
-                accentuent la stagnation du temps et l’isolement du protagoniste.</p>
-
+            <div v-for="projet in projets">
+                <p>{{ projet.direction_photo }}</p>
+            </div>
             <div class="row g-3 mt-3">
                 <div class="col-md-4"><img
                         src="medias/processus de création_projet_1/direction photo/direction photo_image_1.png"
                         alt="Direction photo 1" class="img-fluid rounded shadow"></div>
                 <div class="col-md-4"><img
-                        src="medias/processus de création_projet_1/direction photo/direction photo_image_2.png"
+                        src="medias/processus de création_projet_1/direction photo/direction photo_image_2.jpg"
                         alt="Direction photo 2" class="img-fluid rounded shadow"></div>
                 <div class="col-md-4"><img
-                        src="medias/processus de création_projet_1/direction photo/direction photo_image_3.png"
+                        src="medias/processus de création_projet_1/direction photo/direction photo_image_3.jpg"
                         alt="Direction photo 3" class="img-fluid rounded shadow"></div>
             </div>
         </section>
@@ -179,13 +188,13 @@
 
             <div class="row g-3 mt-3">
                 <div class="col-md-4"><img
-                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_1.png"
+                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_1_copie.jpg"
                         alt="Direction artistique 1" class="img-fluid rounded shadow"></div>
                 <div class="col-md-4"><img
-                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_2.png"
+                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_2_copie.jpg"
                         alt="Direction artistique 2" class="img-fluid rounded shadow"></div>
                 <div class="col-md-4"><img
-                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_3.png"
+                        src="medias/processus de création_projet_1/direction artistique/direction artistique_image_3_copie.jpg"
                         alt="Direction artistique 3" class="img-fluid rounded shadow"></div>
             </div>
         </section>

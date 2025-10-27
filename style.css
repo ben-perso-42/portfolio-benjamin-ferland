@@ -160,109 +160,110 @@ header {
 
 /* === SECTION PROJETS === */
 #projets {
-  margin-bottom: 150px;
+    margin-bottom: 150px;
 }
 
 #projets img {
-  width: 100%;
-  max-width: 500px;
-  border-radius: 20px;
-  margin: 0 auto;
-  display: block;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    margin: 0 auto;
+    display: block;
 }
 
 img.projets-image:hover {
-  transform: scale(1.05);
+    transform: scale(1.05);
 }
 
 /* === BOUTON PROJET AVEC EFFET HOLOGRAPHIQUE === */
 .btn-projet {
-  position: relative;
-  display: inline-block;
-  background-image: var(--button-image);
-  background-size: cover;
-  background-position: center;
-  color: var(--color-white);
-  font-family: var(--font-zain-light);
-  font-size: 1.6rem;
-  padding: 1rem 2.5rem;
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  overflow: hidden;
-  transition: transform 0.4s ease, box-shadow 0.4s ease;
+    position: relative;
+    display: inline-block;
+    background-image: var(--button-image);
+    background-size: cover;
+    background-position: center;
+    color: var(--color-white);
+    font-family: var(--font-zain-light);
+    font-size: 1.6rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
 /* L’effet holographique */
 .btn-projet::before {
-  content: "";
-  position: absolute;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  background: linear-gradient(
-    0deg,
-    transparent,
-    transparent 40%,
-    rgba(0, 0, 0, 0.4),
-    rgba(227, 228, 221, 0.1)
-  );
-  transform: rotate(-45deg);
-  opacity: 0;
-  transition: all 0.5s ease;
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(0deg,
+            transparent,
+            transparent 40%,
+            rgba(0, 0, 0, 0.4),
+            rgba(227, 228, 221, 0.1));
+    transform: rotate(-45deg);
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 /* Au survol : effet holographique et légère mise en relief */
 .btn-projet:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
 }
 
 .btn-projet:hover::before {
-  opacity: 1;
-  transform: rotate(-45deg) translateY(100%);
+    opacity: 1;
+    transform: rotate(-45deg) translateY(100%);
 }
 
 
 
 /* === LOGOS COMPÉTENCES === */
 .logo-item {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .logo-item img {
-  width: 120px;
-  height: auto;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+    width: 120px;
+    height: auto;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .logo-name {
-  position: absolute;
-  font-family: var(--font-zai-tornpaper);
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  text-align: center;
-  pointer-events: none;
+    position: absolute;
+    font-family: var(--font-zai-tornpaper);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    pointer-events: none;
 }
 
 /* Effet au survol et au click qui réduit un peu la grosseur et l'opacité des img des logiciels */
 .logo-item:hover img,
 .logo-item:active img {
-  opacity: 0.2; /* image plus pâle */
-  transform: scale(0.8); /* zoom-out doux */
-  cursor: pointer;
+    opacity: 0.2;
+    /* image plus pâle */
+    transform: scale(0.8);
+    /* zoom-out doux */
+    cursor: pointer;
 }
 
 /* Effet au survol et au click qui affiche le nom des logiciels */
 .logo-item:hover .logo-name,
 .logo-item:active .logo-name {
-  opacity: 1; /* texte visible */
-  cursor: pointer;
+    opacity: 1;
+    /* texte visible */
+    cursor: pointer;
 }
 
 
@@ -278,7 +279,8 @@ img.projets-image:hover {
 }
 
 .competences-swiper img {
-    max-width: 80px; /* controle la grosseur des img des logiciels */
+    max-width: 80px;
+    /* controle la grosseur des img des logiciels */
 }
 
 /* === SECTION PROJET === */

@@ -1,113 +1,117 @@
-[
-    {
-        "id": 1,
-        "title": "La pilule de trop",
-        "category": "Vidéo",
-        "images": [
-            "./medias/miniature_projet_1.png",
-            "./medias/photo_héros_carte.png"
-        ],
-        "description_courte": "Un court-métrage en mosaïque de 1min à 1min30 qui explore l’isolement social et mental de Marc, un trentenaire prisonnier de son addiction.",
-        "description_longue": "On a réalisé une vidéo en mosaïque où nous avions une totale liberté créative. Nous avons raconté la descente aux enfers de Marc qui, englouti par les pilules, sombre progressivement dans l’isolement social et mental.",
-        "documentation_links": [
-            "https://youtu.be/qf2fKAnWzsM?si=fVJYE1qyKU8LB5gm",
-            "https://youtu.be/v39zEhgAmEA?si=Ht4269nKBQlB4kAb"
-        ],
-        "équipe": [
-            "Ryan Dufault",
-            "Yannick Chamberland"
-        ],
-        "roles": [
-            "Conception sonore",
-            "Réalisateur",
-            "Montage vidéo",
-            "Vidéaste"
-        ],
-        "logiciels": [
-            "Davinci Resolve",
-            "After Effects",
-            "Illustrator"
-        ]
-    },
-    {
-        "id": 2,
-        "title": "L'Inconnu de Berlin",
-        "category": "Design",
-        "images": [
-            "./medias/l_inconnu_de_berlin_1.jpg",
-            "./medias/l_inconnu_de_berlin_2.jpg",
-            "./medias/l_inconnu_de_berlin_3.jpg"
-        ],
-        "description_courte": "Un projet consistant à créer un trailer photo présentant une fausse série policière où un détective tente d’arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.",
-        "description_longue": "Elle nous a demandé de créer un trailer photo pour une fausse série policière inventée. Le projet devait comporter 12 images présentant les acteurs et les collaborateurs de la série. On a réalisé un trailer photo pour une fausse série policière avec 12 images présentant les acteurs et les collaborateurs. Mon trailer, L'Inconnu de Berlin, raconte l’histoire d’un détective privé de 40 ans qui doit arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.",
-        "documentation_links": [
-            "https://youtu.be/some_example_link"
-        ],
-        "équipe": [],
-        "roles": [
-            "Designer"
-        ],
-        "logiciels": [
-            "Photoshop"
-        ]
-    },
-    {
-        "id": 3,
-        "title": "Sous le poids du papier",
-        "category": "Stop-motion et animation 2D",
-        "images": [
-            "./medias/sous_le_poids_du_papier_1.jpg",
-            "./medias/sous_le_poids_du_papier_2.jpg",
-            "./medias/sous_le_poids_du_papier_3.jpg"
-        ],
-        "description_courte": "Le projet est une courte vidéo en stop motion, mêlant animations 2D et générique, illustrant un homme (Victor) sombrant dans le burnout.",
-        "description_longue": "Nous devions créer une vidéo en stop motion de 1 à 2 minutes intégrant des animations 2D et un générique présentant les rôles de chacun. Le projet exigeait aussi d’utiliser un objet rouge et d’appliquer une colorisation rouge à l’ensemble de la vidéo. On a réalisé une vidéo en stop motion de 1 à 2 minutes avec des animations 2D et un générique présentant les rôles de chacun. Pour respecter les contraintes, on a choisi d’utiliser un vinyle rouge comme objet et on a appliqué une colorisation rouge à toute la vidéo.",
-        "documentation_links": [
-            "https://youtu.be/-Z6a_1mUTyQ?si=myctQFf6GxWvzcUn"
-        ],
-        "équipe": [
-            "Ryan Dufault",
-            "Yannick Chamberland",
-            "Mohamed Ali Sadki"
-        ],
-        "roles": [
-            "Animateur 2D",
-            "Conception sonore",
-            "Réalisateur",
-            "Montage vidéo",
-            "Vidéaste"
-        ],
-        "logiciels": [
-            "Davinci Resolve",
-            "After Effects"
-        ]
-    },
-    {
-        "id": 4,
-        "title": "La rupture",
-        "category": "Vidéo",
-        "images": [
-            "./medias/la_rupture_1.jpg",
-            "./medias/la_rupture_2.jpg",
-            "./medias/la_rupture_3.jpg"
-        ],
-        "description_courte": "Un homme, d’abord triste après avoir été quitté par son amoureuse, sombre peu à peu dans la colère et l’obsession.",
-        "description_longue": "Elle nous a demandé de réaliser une vidéo de 1 à 1 min 30 en filmant différentes parties du corps humain avec une lentille macro. Le but était que l’accumulation d’images exprime un sentiment ou raconte une histoire. On a réalisé une vidéo de 1 à 1 min 30 en filmant surtout les mains et le visage avec une lentille macro. On a choisi de montrer le passage de la tristesse à la colère à travers ces images.",
-        "documentation_links": [
-            "https://youtu.be/clNIjdpMSMc?si=SdNLpTro9GLUv8VY"
-        ],
-        "équipe": [
-            "Ryan Dufault",
-            "Yannick Chamberland"
-        ],
-        "roles": [
-            "Conception sonore",
-            "Réalisateur",
-            "Montage vidéo",
-            "Vidéaste"
-        ],
-        "logiciels": [
-            "Davinci Resolve"
-        ]
-    }
-]
+{
+    "projets": [
+        {
+            "id": 1,
+            "titre": "La pilule de trop",
+            "categorie": "Vidéo",
+            "video": "https://www.youtube.com/embed/qf2fKAnWzsM?si=JqvLRihD4SziAmUY",
+            "mention": "Académique",
+            "cours": "582-312-MO Vidéo 2",
+            "type_projet": "Équipe",
+            "coequipiers": [
+                "Ryan Dufault",
+                "Yannick Chamberland"
+            ],
+            "role": "Conception sonore, réalisateur, montage vidéo et vidéaste",
+            "description": {
+                "resume": "Vidéo de 1min30 réalisée avec la technique de mosaïque, racontant la descente aux enfers d'un homme isolé par son addiction.",
+                "demande_professeur": "Réaliser une vidéo de 1min à 1min30 en utilisant la technique de mosaïque.",
+                "notre_realisation": "Nous avons raconté la descente aux enfers de Marc, un homme englouti par les pilules, qui sombre peu à peu dans l'isolement social et mental."
+            },
+            "synopsis": "Marc, un trentenaire en apparence ordinaire, cache une addiction qui l'isole totalement sur les plans social et mental.",
+            "logiciels": [
+                {
+                    "nom": "Figma et Photoshop",
+                    "utilisation": "Création du moodboard, du scénarimage, de la direction photo et artistique."
+                },
+                {
+                    "nom": "DaVinci Resolve",
+                    "utilisation": "Montage vidéo, conception sonore et compositing."
+                }
+            ],
+            "direction_photo": "Lumières faibles et tamisées pour renforcer l'ambiance sombre. Utilisation de lampes et de lightpanels pour créer des zones d'ombre. Travellings doux et variations de profondeur de champ pour souligner les symboles (télévisions, bocaux). Les ralentis accentuent la stagnation du temps et l'isolement du protagoniste.",
+            "direction_artistique": "Décors symboliques et oppressants. Palette de couleurs sombre et métallique. Espaces restreints et objets du quotidien (télévisions, bocaux) servant à illustrer l'enfermement émotionnel. Jeux de lumière froide et textures réfléchissantes renforçant la claustrophobie.",
+            "miniature": "medias/miniature_projet_1.png"
+        },
+        {
+            "id": 2,
+            "titre": "L'Inconnu de Berlin",
+            "categorie": "Design",
+            "video": "https://www.youtube.com/embed/qf2fKAnWzsM?si=JqvLRihD4SziAmUY",
+            "mention": "Académique",
+            "cours": "582-121-MO Illustration numérique",
+            "type_projet": "Individuel",
+            "coequipiers": [],
+            "role": "Designer",
+            "description": {
+                "resume": "Un projet consistant à créer un trailer photo présentant une fausse série policière où un détective tente d'arrêter un tueur en série à Berlin avant son prochain meurtre annoncé.",
+                "demande_professeur": "Elle nous a demandé de créer un trailer photo pour une fausse série policière inventée. Le projet devait comporter 12 images présentant les acteurs et les collaborateurs de la série.",
+                "notre_realisation": "J'ai réalisé un trailer photo pour une fausse série policière avec 12 images présentant les acteurs et les collaborateurs. Mon trailer, L'Inconnu de Berlin, raconte l'histoire d'un détective privé de 40 ans qui doit arrêter un tueur en série à Berlin avant son prochain meurtre annoncé."
+            },
+            "synopsis": "Un détective privé tente d'arrêter un tueur en série à Berlin avant qu'il ne commette un nouveau meurtre annoncé.",
+            "logiciels": [
+                {
+                    "nom": "Photoshop",
+                    "utilisation": "Création des images, retouches photo et composition du trailer."
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "titre": "Sous le poids du papier",
+            "categorie": "Stop-motion et animation 2D",
+            "video": "https://youtu.be/-Z6a_1mUTyQ?si=myctQFf6GxWvzcUn",
+            "mention": "Académique",
+            "cours": "582-214-MO Animation 2D et 582-212-MO Vidéo 1",
+            "type_projet": "Équipe",
+            "coequipiers": [
+                "Ryan Dufault",
+                "Yannick Chamberland",
+                "Mohamed Ali Sadki"
+            ],
+            "role": "Animateur 2D, conception sonore, réalisateur, montage vidéo et vidéaste",
+            "description": {
+                "resume": "Le projet est une courte vidéo en stop motion, mêlant animations 2D et générique, illustrant un homme (Victor) sombrant dans le burnout, le tout dominé par une colorimétrie rouge et incluant un objet rouge.",
+                "demande_professeur": "Nous devions créer une vidéo en stop motion de 1 à 2 minutes intégrant des animations 2D et un générique présentant les rôles de chacun. Le projet exigeait aussi d'utiliser un objet rouge et d'appliquer une colorisation rouge à l'ensemble de la vidéo.",
+                "notre_realisation": "On a réalisé une vidéo en stop motion de 1 à 2 minutes avec des animations 2D et un générique présentant les rôles de chacun. Pour respecter les contraintes, on a choisi d'utiliser un tourne-disque rouge comme objet et on a appliqué une colorisation rouge à toute la vidéo."
+            },
+            "synopsis": "Victor, un homme dépassé par la charge mentale et le travail, s'enlise peu à peu dans le burnout, prisonnier d'un quotidien répétitif symbolisé par la couleur rouge omniprésente.",
+            "logiciels": [
+                {
+                    "nom": "After Effects",
+                    "utilisation": "Création et animation des séquences en 2D."
+                },
+                {
+                    "nom": "DaVinci Resolve",
+                    "utilisation": "Montage vidéo, étalonnage et conception sonore."
+                }
+            ]
+        },
+        {
+            "id": 4,
+            "titre": "La rupture",
+            "categorie": "Vidéo",
+            "video": "https://youtu.be/clNIjdpMSMc?si=SdNLpTro9GLUv8VY",
+            "mention": "Académique",
+            "cours": "582-312-MO Vidéo 2",
+            "type_projet": "Équipe",
+            "coequipiers": [
+                "Ryan Dufault",
+                "Yannick Chamberland"
+            ],
+            "role": "Conception sonore, réalisateur, montage vidéo, vidéaste",
+            "description": {
+                "resume": "Un homme, d'abord triste après avoir été quitté par son amoureuse, sombre peu à peu dans la colère et l'obsession, une vidéo racontée en 1 minute 30 à travers une lentille macro.",
+                "demande_professeur": "Elle nous a demandé de réaliser une vidéo de 1 à 1 min 30 en filmant différentes parties du corps humain avec une lentille macro. Le but était que l'accumulation d'images exprime un sentiment ou raconte une histoire.",
+                "notre_realisation": "On a réalisé une vidéo de 1 à 1 min 30 en filmant surtout les mains et le visage avec une lentille macro. On a choisi de montrer le passage de la tristesse à la colère à travers ces images."
+            },
+            "synopsis": "Marc, un trentenaire en apparence ordinaire, cache une douleur intérieure qui le dévore : après une rupture, sa tristesse se transforme peu à peu en colère et en obsession.",
+            "logiciels": [
+                {
+                    "nom": "DaVinci Resolve",
+                    "utilisation": "Montage vidéo, conception sonore et étalonnage."
+                }
+            ]
+        }
+    ]
+}

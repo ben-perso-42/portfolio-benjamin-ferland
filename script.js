@@ -15,38 +15,24 @@ const competencesSwiper = new Swiper('.competences-swiper', {
 });
 
 
-const appli = Vue.createApp({
+const app = Vue.createApp({
   data() {
     return {
-      projects: []  // Tableau vide pour les projets
+      projets: [] // Contient les données des projets chargées depuis projets.json
     };
   },
-  mounted() {
-    console.log("L'app Vue a été créée et montée au DOM (mounted) !");
 
-    // Fetch des données depuis le fichier projects.json
+  mounted() {
     fetch('./projects.json')
-      .then(response => {
-        if (!response.ok) {
-          throw new Error("Erreur lors du chargement des données");
-        }
-        return response.json();
-      })
+      .then(data => data.json())
       .then(data => {
-        this.projects = data;  // Remplir le tableau 'projects' avec les données
-        console.log(this.projects);  // Afficher les données dans la console pour vérifier
-      })
-      .catch(error => {
-        console.error("Erreur:", error);
+        this.projets = data.projets; // Stocke les projets dans le tableau Vue
+        console.log("Projets chargés :", this.projets);
       });
-  },
-  methods: {
-    // Méthodes supplémentaires si besoin
   }
 });
 
-// Monter l'application Vue.js dans le DOM
-appli.mount('#projet');
+app.mount('#projet'); // Attache l'App Vue à l'élément HTML avec l'id #projet
 
 
 
