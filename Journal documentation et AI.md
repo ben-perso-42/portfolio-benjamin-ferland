@@ -18,3 +18,19 @@ Utilisation de ce site pour l’effet holographique au survol du bouton 'en savo
 lien web : https://prismic.io/blog/css-hover-effects#1-holographic-card
 <br>
 code pen de l’effet holographique au survol : https://codepen.io/nefejames/pen/ogvNgJq
+
+
+# Utilisation de chatgpt : <br>
+prompt qui demande comment mettre une virgule entre les 2 noms des coéquipiers d'une projet en utilisant le projects.json : 
+
+comment on fait pour séparer les 2 noms des coéquipiers par une virgule. Voici mon code : <p><strong>Coéquipiers :</strong><br> Ryan Dufault et Yannick Chamberland </p>
+
+<br>
+<br>
+Réponse de chatgpt : <br>
+
+.join(', ') → transforme le tableau en texte séparé par des virgules
+<br>
+<br>
+Résultat : <br>
+<p><strong>Coéquipiers :</strong><br> {{ projet.coequipiers.join(', ') }} </p>
