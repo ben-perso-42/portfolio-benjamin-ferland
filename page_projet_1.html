@@ -136,7 +136,7 @@
 
 
         <!-- Préproduction -->
-        <section class="mb-5">
+        <section class="mb-5" v-if="idprojetcourant == 1"> <!-- l'affiche seulement pour le projet 1 -->
             <h2>Préproduction</h2>
 
             <h3 class="mt-4">Moodboard</h3>
@@ -177,7 +177,7 @@
         </section>
 
         <!-- Direction photo -->
-        <section class="mb-5">
+        <section class="mb-5" v-if="idprojetcourant == 1"> <!-- l'affiche seulement pour le projet 1 -->
             <h2>Direction photo</h2>
             <div v-for="projet in projets">
                 <p>{{ projet.direction_photo }}</p>
@@ -196,15 +196,11 @@
         </section>
 
         <!-- Direction artistique -->
-        <section class="mb-5">
+        <section class="mb-5" v-if="idprojetcourant == 1"> <!-- l'affiche seulement pour le projet 1 -->
             <h2>Direction artistique</h2>
-            <p>La direction artistique de notre métrage se distingue par l'utilisation de décors symboliques et
-                oppressants, où les espaces restreints et les objets du quotidien, tels que des télévisions et des
-                bocaux,
-                servent à illustrer l'enfermement émotionnel du personnage. La palette de couleurs est sombre, avec des
-                teintes métalliques et des éclats de lumière froide, créant une ambiance claustrophobe et introspective.
-                Chaque élément du décor est pensé pour renforcer le sentiment de captivité, tandis que les textures et
-                les reflets des surfaces accentuent l’idée d’isolement émotionnel.</p>
+            <div v-for="projet in projets">
+                <p>{{ projet.direction_artistique }}</p>
+            </div>
 
             <div class="row g-3 mt-3">
                 <div class="col-md-4"><img
