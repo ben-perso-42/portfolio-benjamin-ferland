@@ -46,16 +46,30 @@ app.mount('#projets'); // Attache l'App Vue à l'élément HTML avec l'id #proje
 
 // Crée le swiper compétences
 const competencesSwiper = new Swiper('.competences-swiper', {
-  direction: 'horizontal', // Ça défile à l’horizontale
-  slidesPerView: 3,       // 3 slides visibles
-  spaceBetween: 30,       // Espace entre chaque slide
-  scrollbar: {
-    el: '.swiper-scrollbar', // Barre de scroll
-    draggable: true,         // On peut la bouger
+  direction: 'horizontal',
+  slidesPerView: 3,
+  spaceBetween: 30,
+
+  // === Pagination (points ronds) ===
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    type: 'bullets'
   },
+
+  // Optionnel : scrollbar si tu veux (laisse ou enlève)
+  scrollbar: {
+    el: '.swiper-scrollbar',
+    draggable: true,
+  },
+
+  // Permet à Swiper de se réinitialiser si parent/éléments changent (utile avec Vue)
+  observer: true,
+  observeParents: true,
+
   breakpoints: {
-    320: { slidesPerView: 2, spaceBetween: 20 },   // Petit écran
-    768: { slidesPerView: 3, spaceBetween: 30 },   // Tablette
-    1024: { slidesPerView: 5, spaceBetween: 40 }   // Grand écran
+    320: { slidesPerView: 2, spaceBetween: 20 },
+    768: { slidesPerView: 3, spaceBetween: 30 },
+    1024: { slidesPerView: 5, spaceBetween: 40 }
   }
 });

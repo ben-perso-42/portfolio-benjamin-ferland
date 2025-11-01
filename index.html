@@ -53,7 +53,7 @@
   </header>
 
   <!-- ===================== SECTION À PROPOS ===================== -->
-  <section id="apropos" class="d-flex flex-column justify-content-center align-items-center py-5">
+  <section id="apropos" class="d-flex flex-column justify-content-center align-items-center">
     <img src="medias/photo_héros.png" class="img-héros" alt="photo_héros">
     <p>Je suis un étudiant à sa dernière année en technique d'intégration multimédia au Collège Montmorency de 20 ans,
       passionné par la vidéo. J'adore raconter des histoires immersives et originales qui reflètent ma personnalité et
@@ -122,8 +122,9 @@
     <h2>Mes Compétences</h2>
 
     <!-- Swiper compétences -->
-    <div class="competences-swiper">
+    <div class="competences-swiper swiper">
       <div class="swiper-wrapper">
+
         <div class="swiper-slide">
           <div class="logo-item">
             <img src="medias/logo/logo figma.png" alt="Figma" />
@@ -158,7 +159,11 @@
             <p class="logo-name">After Effects</p>
           </div>
         </div>
+
       </div>
+
+      <!-- Pagination (petits points ronds visibles seulement sur mobile) -->
+      <div class="swiper-pagination"></div>
     </div>
   </section>
 

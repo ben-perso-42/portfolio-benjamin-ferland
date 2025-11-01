@@ -194,6 +194,7 @@ img.projets-image:hover {
 .logo-name {
     position: absolute;
     font-family: var(--font-zai-tornpaper);
+    font-size: 1.5rem;
     opacity: 0;
     transition: opacity 0.3s ease; /* texte des noms des logiciels qui va apparaitre lentement */
     text-align: center;
@@ -221,10 +222,19 @@ img.projets-image:hover {
 
 .competences-swiper {
     margin-top: 150px; /* espace sous le titre Mes Compétences */
+    overflow: hidden;
 }
 
 .competences-swiper img {
     max-width: 80px; /* controle la grosseur des img des logiciels */
+}
+
+/* Pagination Swiper */
+.swiper-pagination {
+  display: none;
+  z-index: 10;
+  /* si tu veux que la pagination soit centrée et en dessous du swiper,
+     laisse display:none ici et active la version mobile dans la media query */
 }
 
 /* === SECTION PROJET === */
@@ -286,7 +296,55 @@ footer {
         font-size: 2rem;
     }
 
+    /* === HEADER === */
+    header {
+    margin-top: 20px;
+    }
+
+    /* === COMPÉTENCES (SWIPER) === */
+    .swiper-pagination {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    position: relative; /* position normale sous le contenu */
+  }
+
+  /* Petits points ronds */
+  .swiper-pagination-bullet {
+    background: #000000; /* couleur des points */
+    opacity: 0.45;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin: 0 6px;
+    transition: opacity 0.25s, transform 0.25s;
+    box-shadow: none;
+  }
+
+  /* Point actif */
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+    opacity: 1;
+    transform: scale(1.3);
+  }
+
     /* === SECTION PROJET === */
+
+
+    /* === SECTION FILTRES PROJETS === */
+    #filtres button {
+    padding: 5px 10px; /* augmente la taille */
+    margin-right: 5px; /* espace entre les cases de filtres */
+}
+
+    .img-héros {
+    display: flex;
+    justify-content: center;
+    position: static;
+    width: 80%;
+    height: 80%;
+}
 
     #projet h1 {
         font-size: 2.5rem;
