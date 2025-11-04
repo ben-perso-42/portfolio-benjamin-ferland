@@ -11,9 +11,9 @@
             "Ryan Dufault",
             "Yannick Chamberland"
         ],
-        "role": "concepteur sonore, réalisateur, monteur vidéo et vidéaste",
+        "role": "Concepteur Sonore, Réalisateur, Monteur Vidéo et Vidéaste.",
         "description": {
-            "synopsis": "Marc est un homme dans la trentaine qui parait normal au premier regard mais ce que les gens ne savent pas c'est qu'il souffre d'une profonde addiction le laissant en isolation complète socialement et mentalement",
+            "synopsis": "Marc est un homme dans la trentaine qui parait normal au premier regard, mais ce que les gens ne savent pas c'est qu'il souffre d'une profonde addiction le laissant en isolation complète socialement et mentalement.",
             "demande_professeur": "Réaliser une vidéo en utilisant la technique de mosaïque.",
             "notre_realisation": "On a réalisé une vidéo en mosaïque où nous avions une totale liberté créative. Nous avons raconté la descente aux enfers de Marc qui, englouti par les pilules, sombre progressivement dans l'isolement social et mental."
         },
@@ -37,9 +37,9 @@
         "coequipiers": [],
         "role": "Designer",
         "description": {
-            "synopsis": "Jack (40 ans) détective privé, déjeune dans sa cuisine. Il écoute la télé. Le journaliste indique que le tueur qui tiens en haleine toute la police de Berlin vient de poignarder sa 9ème victime. L'Inconnu annonce que sa prochaine victime sera tuée dans 10 heures. Jack sera-t-il capable de résoudre ce mystère avant qu'il ne soit trop tard? Une folle course contre la montre est lancée dans les rues de Berlin.",
+            "synopsis": "Jack (40 ans) détective privé, déjeune dans sa cuisine. Il écoute la télé. Le journaliste indique que le tueur qui tient en haleine toute la police de Berlin vient de poignarder sa 9ème victime. L'Inconnu annonce que sa prochaine victime sera tuée dans 10 heures. Jack sera-t-il capable de résoudre ce mystère avant qu'il ne soit trop tard? Une folle course contre la montre est lancée dans les rues de Berlin.",
             "demande_professeur": "Elle nous a demandé de créer un trailer photo pour une fausse série policière inventée. Le projet devait comporter 12 images présentant les acteurs et les collaborateurs de la série.",
-            "notre_realisation": "J'ai réalisé un trailer photo pour une fausse série policière avec 12 images présentant les acteurs et les collaborateurs. Mon trailer, L'Inconnu de Berlin, raconte l'histoire d'un détective privé de 40 ans qui doit arrêter un tueur en série à Berlin avant son prochain meurtre annoncé."
+            "ma_realisation": "J'ai réalisé un trailer photo pour une fausse série policière avec 12 images présentant les acteurs et les collaborateurs. Mon trailer, L'Inconnu de Berlin, raconte l'histoire d'un détective privé de 40 ans qui doit arrêter un tueur en série à Berlin avant son prochain meurtre annoncé."
         },
         "logiciels1": "Photoshop",
         "utilisation1": "Pour la création du moodboard, des images, des retouches photos et la composition du trailer.",
@@ -59,18 +59,18 @@
             "Yannick Chamberland",
             "Mohamed Ali Sadki"
         ],
-        "role": "animateur 2d, concepteur sonore, réalisateur, monteur vidéo et vidéaste",
+        "role": "Animateur 2D, Concepteur Sonore, Réalisateur, Monteur Vidéo et Vidéaste",
         "description": {
             "synopsis": "Le projet est une courte vidéo en stop motion, mêlant animations 2D et générique, illustrant un homme (Victor) sombrant dans le burnout, le tout dominé par une colorimétrie rouge et incluant une table tournante rouge.",
             "demande_professeur": "Nous devions créer une vidéo en stop motion de 1 à 2 minutes intégrant des animations 2D et un générique présentant les rôles de chacun. Le projet exigeait aussi d'utiliser un objet rouge et d'appliquer une colorisation rouge à l'ensemble de la vidéo.",
             "notre_realisation": "On a réalisé une vidéo en stop motion de 1 à 2 minutes avec des animations 2D et un générique présentant les rôles de chacun. Pour respecter les contraintes, on a choisi d'utiliser un tourne-disque rouge comme objet et on a appliqué une colorisation rouge à toute la vidéo."
         },
         "logiciels1": "Photoshop",
-        "utilisation1": "Pour la création des animations des séquences en 2D.",
+        "utilisation1": "Pour la création du moodboard.",
         "logiciels2": "After Effects",
-        "utilisation2": "Pour la création du moodboard.",
+        "utilisation2": "Pour la création des animations des séquences en 2D.",
         "logiciels3": "DaVinci Resolve",
-        "utilisation3": "Pour la création du Montage vidéo de l'étalonnage et de la conception sonore.",
+        "utilisation3": "Pour la création du Montage vidéo, de l'étalonnage et de la conception sonore.",
         "miniature": "medias/miniature_projet_3.png",
         "description_courte": "Une vidéo en stop motion illustrant le burnout."
     },
@@ -86,19 +86,15 @@
             "Ryan Dufault",
             "Yannick Chamberland"
         ],
-        "role": "concepteur sonore, réalisateur, monteur vidéo et vidéaste",
+        "role": "Concepteur Sonore, Réalisateur, Monteur Vidéo et Vidéaste",
         "description": {
             "synopsis": "Un homme, d'abord triste après avoir été quitté par son amoureuse, sombre peu à peu dans la colère et l'obsession, une vidéo racontée en 1 minute 30 à travers une lentille macro.",
             "demande_professeur": "Elle nous a demandé de réaliser une vidéo de 1 à 1 min 30 en filmant différentes parties du corps humain avec une lentille macro. Le but était de créer une accumulation d'images qui exprime un sentiment ou raconte une histoire.",
             "notre_realisation": "On a réalisé une vidéo de 1 à 1 min 30 en filmant surtout les mains et le visage avec une lentille macro. On a choisi de montrer le passage de la tristesse à la colère à travers ces images."
         },
         "synopsis": "Marc, un trentenaire en apparence ordinaire, cache une douleur intérieure qui le dévore : après une rupture, sa tristesse se transforme peu à peu en colère et en obsession.",
-        "logiciels": [
-            {
-                "nom": "DaVinci Resolve",
-                "utilisation": "Montage vidéo, conception sonore et étalonnage."
-            }
-        ],
+        "logiciels1": "DaVinci Resolve",
+        "utilisation1": "Pour la création du Montage vidéo, de l'étalonnage et de la conception sonore.",
         "miniature": "medias/miniature_projet_4.png",
         "description_courte": "Une vidéo en macro observant la tristesse et la colère."
     }

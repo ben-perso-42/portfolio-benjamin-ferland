@@ -75,9 +75,9 @@
                     <strong>Type de projet :</strong><br>{{ projet.type_projet }}
                 </p>
 
-                <p v-if="projet.id == idprojetcourant">
+                <p v-if="projet.id == idprojetcourant && idprojetcourant != 2">
                     <strong>Coéquipiers :</strong><br>{{ projet.coequipiers.join(', ') }}
-                </p>
+                  </p>
 
                 <p v-if="projet.id == idprojetcourant">
                     <strong>Catégorie :</strong><br>{{ projet.categorie }}
