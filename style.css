@@ -338,15 +338,6 @@ img.projets-image:hover {
 
 /* === RESPONSIVE MOBILE === */
 @media (max-width: 768px) {
-    body {
-        min-height: calc((1vw + 1vh) * 75);
-        margin: 2em 0;
-        padding: 4em;
-        box-shadow: 2px 3px 20px black, 0 0 60px #8a4d0f inset;
-        background: #fffef0;
-        filter: url(#wavy2);
-    }
-
     h1 {
         font-size: 4rem;
     }
