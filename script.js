@@ -73,3 +73,22 @@ const competencesSwiper = new Swiper('.competences-swiper', {
     1024: { slidesPerView: 5, spaceBetween: 40 }
   }
 });
+
+// flèche 'Retour en haut'
+
+const backToTopBtn = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+        backToTopBtn.classList.add("show");
+    } else {
+        backToTopBtn.classList.remove("show");
+    }
+});
+
+backToTopBtn.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+});

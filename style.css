@@ -115,7 +115,7 @@ header {
 
 /* === SECTION PROJETS === */
 #projets {
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 #projets img {
@@ -255,6 +255,42 @@ img.projets-image:hover {
 
 .logiciels {
     text-align: left;
+}
+
+
+/* === flèche 'Retour en haut' === */
+
+.back-to-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    z-index: 9999;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top p {
+   font-family: var(--font-zai-tornpaper);
+   font-size: x-large;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
+
+/* Animation de la flèche */
+@keyframes floatUpDown {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); } /* monte un peu */
+    100% { transform: translateY(0); } /* redescend */
+}
+
+.back-to-top.show img {
+    pointer-events: auto;
+    animation: floatUpDown 1.6s ease-in-out infinite;
 }
 
 

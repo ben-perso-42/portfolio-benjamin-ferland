@@ -77,7 +77,7 @@
 
                 <p v-if="projet.id == idprojetcourant && idprojetcourant != 2">
                     <strong>Coéquipiers :</strong><br>{{ projet.coequipiers.join(', ') }}
-                  </p>
+                </p>
 
                 <p v-if="projet.id == idprojetcourant">
                     <strong>Catégorie :</strong><br>{{ projet.categorie }}
@@ -215,6 +215,11 @@
             </div>
         </section>
     </section>
+
+    <div id="backToTop" class="back-to-top">
+        <img src="medias/flèche.png" alt="Retour en haut">
+        <p>Retour en haut</p>
+    </div>
 
     <!-- ===================== FOOTER ===================== -->
     <footer id="contact" class="text-center py-4 bg-dark text-white">
