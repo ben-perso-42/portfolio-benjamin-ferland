@@ -348,7 +348,7 @@ footer {
 /* === RESPONSIVE MOBILE === */
 @media (max-width: 768px) {
     body {
-        background-image: url("medias/background_mobile1.jpg") no-repeat center/cover fixed;
+        background: url("medias/background_mobile.webp") no-repeat center/cover fixed;
     }
 
     h1 {
